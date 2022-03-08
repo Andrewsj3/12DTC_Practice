@@ -1,3 +1,10 @@
+"""MMF_base_v2: Integrate the validate_name component into the main program,
+which asks the user for their name and checks that it is not blank.
+Jack Andrews
+8/3/22
+"""
+
+
 # Import statements
 
 # Function definitions

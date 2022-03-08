@@ -1,3 +1,11 @@
+"""MMF_base_v3: Integrate basic version of the ticket loop into main program,
+which continually asks the user for their name until either 5 tickets have been
+sold or the user enters 'xxx' as the name.
+Jack Andrews
+8/03/22
+"""
+
+
 # Import statements
 
 # Function definitions

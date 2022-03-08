@@ -21,7 +21,3 @@ def loop():
         print(f"\nYou have sold {count} tickets.")
         print(f"There are still {consts.MAX_TICKETS - count} " 
               f"tickets available.")
-
-
-if __name__ == '__main__':
-    loop()

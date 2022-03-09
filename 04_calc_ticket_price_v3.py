@@ -1,5 +1,7 @@
+from collections import namedtuple
+
+
 def calc_price(age):
-    from collections import namedtuple
     constants = namedtuple("const", ["CHILD_AGE", "STANDARD_AGE"])
     consts = constants(range(12, 16), range(16, 65))
     if age in consts.CHILD_AGE:
@@ -12,6 +14,12 @@ def calc_price(age):
 
 
 # if __name__ == '__main__':
-#     test_cases = [["Rangi", 15], ["Manaia", 16], ["Talia", 64], ["Arihi", 65]]
+#     TICKET_COST_PRICE = 5
+#     profit = 0
+#     test_cases = [["Rangi", 15], ["Manaia", 16], ["Talia", 64], ["Arihi", 65]
+#     ]
 #     for name, age in test_cases:
-#         print(f"For {name}, the price is ${calc_price(age):.2f}")
+#         price = calc_price(age)
+#         print(f"For {name}, the price is ${price:.2f}")
+#         profit += price - TICKET_COST_PRICE
+#     print(f"\nProfit is ${profit:.2f}")

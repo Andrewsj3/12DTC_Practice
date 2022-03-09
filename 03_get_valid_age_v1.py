@@ -10,7 +10,3 @@ def get_age(prompt, low_age, high_age):
         except ValueError:
             print("Please enter an integer "
                   "(i.e. a whole number with no decimals)")
-
-
-if __name__ == '__main__':
-    get_age("Please enter your age: ", 12, 110)

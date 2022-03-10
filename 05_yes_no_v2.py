@@ -10,8 +10,9 @@ def yes_no(question):
             response = input(question).lower()
 
 
-# if __name__ == '__main__':
-#     if yes_no("Do you want snacks? "):
-#         print("Valid answer, you do want snacks")
-#     else:
-#         print("Valid answer, you don't want snacks")
+if __name__ == '__main__':
+    while True:
+        if yes_no("Do you want snacks? "):
+            print("Valid answer, you do want snacks")
+        else:
+            print("Valid answer, you don't want snacks")

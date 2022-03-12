@@ -33,11 +33,11 @@ def get_snacks(question, valid_choices):
     return snacks
 
 
-if __name__ == '__main__':
-    ask_for_snack = "What snack do you want - 'x' to stop ordering: "
-    valid_snacks = {('popcorn', 'p', 'corn', '1'): "Popcorn",
-                    ('m&ms', 'mms', 'm', '2'): "M&Ms",
-                    ('pita chips', 'chips', 'pc', 'pita', 'c', '3'):
-                        "Pita chips",
-                    ('w', 'water', '4'): "Water"}
-    get_snacks(ask_for_snack, valid_snacks)
+# if __name__ == '__main__':
+#     ask_for_snack = "What snack do you want - 'x' to stop ordering: "
+#     valid_snacks = {('popcorn', 'p', 'corn', '1'): "Popcorn",
+#                     ('m&ms', 'mms', 'm', '2'): "M&Ms",
+#                     ('pita chips', 'chips', 'pc', 'pita', 'c', '3'):
+#                         "Pita chips",
+#                     ('w', 'water', '4'): "Water"}
+#     get_snacks(ask_for_snack, valid_snacks)

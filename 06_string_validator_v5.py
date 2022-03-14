@@ -1,6 +1,8 @@
 def analyse_string(string, regex):
     import re
-    if re.match(regex, string):
+    if len(string) == 1:
+        return 1, string
+    elif re.match(regex, string):
         qty = int(string[0])
         snack = string[1:]
     else:

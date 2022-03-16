@@ -1,6 +1,7 @@
 """MMF_base_v6: Integrate snack ordering into the program. The latest version
 now allows user to order up to 4 of one snack at a time with the help of the
-string analyser. Additionally,
+string analyser. Additionally, it prints a summary of the user's order at the
+end, as well as a dataframe to neatly output all the data gathered.
 Jack Andrews
 10/03/22
 """

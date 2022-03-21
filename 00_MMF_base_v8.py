@@ -207,7 +207,7 @@ def loop(movie_data_dict):
                         price += prices.get(snack) * qty
                         subtotal += prices.get(snack) * qty
                         movie_data_dict.get(snack)[count-1] = qty
-                    movie_data_dict.get("Snack Cost").append(price)
+                    movie_data_dict.get("Snack Cost")[count-1] = price
                     movie_data_dict.get("Snack Profit")\
                         .append(round(price * consts.SNACK_PROFIT_MARGIN, 2))
                 summary(order)
@@ -238,8 +238,9 @@ def loop(movie_data_dict):
             print(f"There are still {consts.MAX_TICKETS - count} tickets "
                   "available")
 
-    print(f"\nTicket profit is $"
+    print(f"\nTotal profit is $"
           f"{profit+sum(movie_data_dict.get('Snack Profit')):.2f}")
+    # Added snack profit to profit calculations
     return count
 
 
@@ -250,8 +251,8 @@ def main():
     all_names = []
     all_tickets = []
     surcharge = []
-    snack_cost = []
-    snack_profit = []
+    snack_cost = [0] * consts.MAX_TICKETS
+    snack_profit = [0] * consts.MAX_TICKETS
     popcorn = [0] * consts.MAX_TICKETS
     # Initialising lists at maximum possible length so zeros don't have to
     # be manually recorded (for snack lists only)
@@ -289,7 +290,8 @@ def main():
     if yes_no("Print all columns (y/n)? "):
         print(movie_frame)
     else:
-        print(movie_frame[["Ticket", "Subtotal", "Surcharge", "Total"]])
+        print(movie_frame[["Ticket", "Snack Cost", "Subtotal", "Surcharge",
+                           "Total"]])
 
 
 if __name__ == '__main__':

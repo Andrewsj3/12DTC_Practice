@@ -19,12 +19,13 @@ def apply_surcharge():
                      (
                      "ca", "cash", "money", "notes", "coins", 'c', '3'): "Cash"
                      }
-    surcharge = 0
+
     while True:
+        surcharge = 0
         name = input("What is your name: ").title()
         if not name:
             continue
-        if name == 'x':
+        if name == 'X':
             break
         subtotal = float(input("Subtotal: $"))
         payment_choice = get_choice("How would you like to pay? ",
